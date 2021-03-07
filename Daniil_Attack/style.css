@@ -44,11 +44,12 @@
   height: 30px;
   position: absolute;
   border-radius: 50%;
+  border-color: red;
   background-color: #fff;
-  box-shadow:
+  /*box-shadow:
        0 0 6px 3px #fff,
        0 0 5px 6px #f0f,
-       0 0 9px 9px #0ff;
+       0 0 9px 9px #0ff;*/
 }
 
 .monster-transition {

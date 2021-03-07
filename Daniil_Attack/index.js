@@ -34,7 +34,7 @@ function moveUp() {
     return
   } else {
     let position = parseInt(topPosition)
-    position -= 8
+    position -= 10
     shooter.style.top = `${position}px`
   }
 }
@@ -46,7 +46,7 @@ function moveDown() {
     return
   } else {
     let position = parseInt(topPosition)
-    position += 8
+    position += 10
     shooter.style.top = `${position}px`
   }
 }
@@ -181,6 +181,7 @@ function playGame() {
   instructions.style.display = 'none'
   window.addEventListener("keydown", letShipFly)
   justice = new Audio("audio/Justice-One-Minute-To-Midnight.m4a")
+  justice.volume = 0.3
   //justice.play()
   monsterInterval = setInterval(() => { createMonster() }, 2100)
 }
